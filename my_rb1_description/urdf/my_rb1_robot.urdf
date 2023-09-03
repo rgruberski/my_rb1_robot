@@ -48,20 +48,20 @@
         <visual>
             <origin xyz="0 0 0" rpy="-1.575 0 0"/>
             <geometry>
-                <cylinder radius="0.05" length="0.03"/>
+                <cylinder radius="0.025" length="0.03"/>
             </geometry>
             <material name="red"/>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="-1.575 0 0"/>
             <geometry>
-                <cylinder radius="0.05" length="0.03"/>
+                <cylinder radius="0.025" length="0.03"/>
             </geometry>
         </collision>
         <inertial>
             <mass value="1.5" />
             <origin xyz="0 0 0" rpy="-1.575 0 0" />
-            <inertia ixx="0.0010500000000000002" ixy="0.0" ixz="0.0" iyy="0.0010500000000000002" iyz="0.0" izz="0.0018750000000000004" />
+            <inertia ixx="0.00034687500000000007" ixy="0.0" ixz="0.0" iyy="0.00034687500000000007" iyz="0.0" izz="0.0004687500000000001" />
         </inertial>
     </link>
 
@@ -75,20 +75,20 @@
         <visual>
             <origin xyz="0 0 0" rpy="-1.575 0 0"/>
             <geometry>
-                <cylinder radius="0.05" length="0.03"/>
+                <cylinder radius="0.025" length="0.03"/>
             </geometry>
             <material name="red"/>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="-1.575 0 0"/>
             <geometry>
-                <cylinder radius="0.05" length="0.03"/>
+                <cylinder radius="0.025" length="0.03"/>
             </geometry>
         </collision>
         <inertial>
             <mass value="1.5" />
             <origin xyz="0 0 0" rpy="-1.575 0 0" />
-            <inertia ixx="0.0010500000000000002" ixy="0.0" ixz="0.0" iyy="0.0010500000000000002" iyz="0.0" izz="0.0018750000000000004" />
+            <inertia ixx="0.00034687500000000007" ixy="0.0" ixz="0.0" iyy="0.00034687500000000007" iyz="0.0" izz="0.0004687500000000001" />
         </inertial>
     </link>
 
@@ -181,4 +181,27 @@
         <child link="front_laser" />
     </joint>
 
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="front_caster">
+        <material>Gazebo/Gray</material>
+    </gazebo>
+
+    <gazebo reference="back_caster">
+        <material>Gazebo/Gray</material>
+    </gazebo>
+
+    <gazebo reference="front_laser">
+        <material>Gazebo/Red</material>
+    </gazebo>
 </robot>
