@@ -48,7 +48,7 @@ public:
 
     double distance = 0.0;
 
-    vel_msg.angular.z = 0.5 * ((float)req.degrees / std::abs(req.degrees));
+    vel_msg.angular.z = -0.5 * ((float)req.degrees / std::abs(req.degrees));
     vel_pub.publish(vel_msg);
 
     yaw_old = std::abs(yaw);
